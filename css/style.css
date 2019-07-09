@@ -1,9 +1,13 @@
-*, *::after, *::before{
-box-sizing: border-box;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
+
 *:focus {
     outline: none;
 }
+
 /* General styles */
 html,
 body {
@@ -11,14 +15,20 @@ body {
     font-weight: 500;
     font-style: normal;
 }
-h1, h2, h3{
+
+h1,
+h2,
+h3 {
     font-family: 'Playfair Display', Courier, monospace;
+    color: #2d2d2d;
 }
-span{
+
+span {
     font-family: 'Playfair Display';
     font-weight: bold;
     font-style: normal;
 }
+
 section {
     text-align: center;
 
@@ -29,7 +39,8 @@ img {
     height: auto;
 }
 
-/* apply a natural box layout model to all elements, but allowing components to change */
+/* apply a natural box layout model to all elements,
+ but allowing components to change */
 html {
     box-sizing: border-box;
 }
@@ -64,20 +75,20 @@ header {
 .nav-list {
     text-align: center;
     text-transform: uppercase;
-    color: red;
+    color: #e2574c;
     font-size: 16px;
     align-self: flex-end;
 }
 
 a {
-    color: red;
+    color: #e2574c;
     font-size: 16px;
 }
 
 li.nav-list {
     display: inline;
     margin-left: 15px;
-    
+
 }
 
 /* Season banner */
@@ -87,18 +98,19 @@ li.nav-list {
         url(../images/banner-girl.png) no-repeat center 70px,
         url(../images/flower-bkgd.jpg) repeat-x center top;
     background-size: cover, contain, contain;
-padding: 150px;
-color:white;
+    padding: 150px;
+    color: white;
 }
+
 .season {
     font-size: 70px;
-    
+
 }
 
 .new-collection {
     font-size: 30px;
     text-transform: uppercase;
-    
+
 }
 
 .container {
@@ -114,11 +126,11 @@ color:white;
     height: 300px;
     font-size: 50px;
     font-style: italic;
-    padding:70px;
+    padding: 70px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    
+
 }
 
 .hand-title {
@@ -133,7 +145,7 @@ color:white;
 .products {
     display: flex;
     flex-flow: column wrap;
-    color:white;
+    color: white;
 }
 
 .products-catalogue {
@@ -143,12 +155,17 @@ color:white;
     background-color: white;
 }
 
+.products-catalogue li a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
 
 .products-list {
     display: flex;
-    font-size: 40px;
-    text-transform: uppercase;
-    flex-basis:25%;
+    flex-basis: 25%;
     justify-content: center;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -156,46 +173,50 @@ color:white;
 
 .products-men-women {
     display: flex;
-    font-size: 40px;
-    text-transform: uppercase;
-    flex-basis:50%;
+    flex-basis: 50%;
     justify-content: center;
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.imgmen{
+
+.imgmen {
     background:
-    url(../images/mens-category.jpg) no-repeat center center;
+        url(../images/mens-category.jpg) no-repeat center center;
     background-size: cover;
     border: 5px solid white;
 }
-.imgtrends{
+
+.imgtrends {
     background:
-    url(../images/trends-category.jpg) no-repeat center center;
+        url(../images/trends-category.jpg) no-repeat center center;
     background-size: cover;
     border: 5px solid white;
 }
-.imgglasses{
+
+.imgglasses {
     background:
-    url(../images/glasses-category.jpg) no-repeat center center;
+        url(../images/glasses-category.jpg) no-repeat center center;
     background-size: cover;
     border: 5px solid white;
 }
-.imgsales{
+
+.imgsales {
     background:
-    url(../images/sale-category.jpg) no-repeat center center;
+        url(../images/sale-category.jpg) no-repeat center center;
     background-size: cover;
     border: 5px solid white;
 }
-.imgbags{
+
+.imgbags {
     background:
-    url(../images/bags-category.jpg) no-repeat center center;
+        url(../images/bags-category.jpg) no-repeat center center;
     background-size: cover;
     border: 5px solid white;
 }
-.imgwomen{
+
+.imgwomen {
     background:
-    url(../images/womens-category.jpg) no-repeat center center;
+        url(../images/womens-category.jpg) no-repeat center center;
     background-size: cover;
     border: 5px solid white;
 }
@@ -203,7 +224,6 @@ color:white;
 /* Most Loved products */
 .loved-products {
     font-size: 40px;
-    color:purple;
 }
 
 
@@ -213,6 +233,12 @@ color:white;
     justify-content: space-evenly;
     width: 100%;
     flex-wrap: wrap;
+    color:#969696;
+}
+.catalogue-products p a {
+    color: #e2574c;
+    text-decoration: none;
+    font-size: 1em;
 }
 
 .stretch-dress {
@@ -252,44 +278,58 @@ color:white;
 
 /* Signup for updates */
 .signup {
-  padding: 150px;
-  background:
-    url(../images/wave-bkgd.jpg) no-repeat bottom;
-    background-size: 1024px 1500px cover;
-  color: white;
+    padding: 150px;
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+        url(../images/wave-bkgd.jpg) no-repeat bottom;
+    background-size: cover 1024px 1500px cover;
+    color: white;
 }
-.signup h2{
-font-size: 2em;
-padding: 0.5em;
+
+.signup h2 {
+    font-size: 2em;
+    padding: 0.5em;
+    font-style: italic;
+    color: white;
 }
-.signup p{
-font-size:1em;
-line-height: 2em;
+
+.signup p {
+    font-size: 1em;
+    line-height: 2em;
+    max-width: 60%;
+    margin: 0 auto;
 }
-.email-box{
+
+.email-box {
     border-radius: 40px;
     background-color: white;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    min-width: 300px;
+    max-width: 600px;
+    width: 70%;
+    margin: 0 auto;
 }
-.email{
-border:0px;
-border-radius: 40px;
-padding: 1em;
-margin-left:1.5em;
-height:100%;
-align-items: center;
-/* background-color: blue; */
-color:black;
-width: 90%;
-font-size: 1em;
-}
-.subscribe{
-    padding: 1em;
-    margin:0.3em;
+
+.email {
+    border: 0px;
     border-radius: 40px;
-    background-color: orangered;
+    padding: 1em;
+    margin-left: 1.5em;
+    height: 100%;
+    align-items: center;
+    /* background-color: blue; */
+    color: black;
+    width: 90%;
+    font-size: 1em;
+}
+
+.subscribe {
+    padding: 1em;
+    margin: 0.3em;
+    border-radius: 40px;
+    background-color: #e2574c;
     font-size: 1em;
     color: white;
     font-weight: bold;
@@ -305,4 +345,40 @@ footer {
 .footer-content {
     display: flex;
     justify-content: space-between;
+    height: 150px;
 }
+
+.copy-contact {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 80%;
+}
+
+p.info a {
+    color: white;
+}
+
+p .copyright {
+    line-height: 2em;
+}
+
+.footer-content p.contact {
+    color: #969696;
+}
+
+.footer-content ul {
+    line-height: 1.5em;
+}
+
+footer .footer-content ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Tablet*/
+@media screen and (min-width: 600 px) {}
+
+/*end of table section*/
+/*Desktop*/
+@media screen and (min-width: 1240 px) {}

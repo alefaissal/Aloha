@@ -25,12 +25,12 @@
 <body>
     <header class="container">
         <img class="logo" src="images/aloha-logo.svg" alt="Aloha Logo" width="200">
-        <nav class="nav-list nav-border">
+        <nav id=#nav-link class="nav-list nav-border">
             <ul>
-                <li class="nav-list"><a href="#">About</a></li>
+                <li class="nav-list"><a href="#hand-link">About</a></li>
                 <li class="nav-list"><a href="#shop-link">Shop</a></li>
-                <li class="nav-list"><a href="#">Featured</a></li>
-                <li class="nav-list"><a href="#">Updates</a></li>
+                <li class="nav-list"><a href="#loved-link">Featured</a></li>
+                <li class="nav-list"><a href="#update-link">Updates</a></li>
             </ul>
         </nav>
         <div class="cart">
@@ -45,7 +45,7 @@
     </section>
 
     <!-- section with hand-crafted styles-->
-    <section class="container hand-crafted">
+    <section id="hand-link" class="container hand-crafted">
         <h2 class="hand-title">Hand-Crafted <span>Styles</span> </h2>
         <p class="hand-text">Aloha Apparel Co. sells only the finestready-to-travel clothing.
             Browser our currenselection of products or sign-upfor updates bellow.
@@ -67,7 +67,7 @@
     </section>
 
     <section class="loved-products">
-        <div class="container">
+        <div id="loved-link" class="container">
             <h2>Most-Loved <span>Products</span> </h2>
         </div>
     </section>
@@ -137,15 +137,15 @@
             </div>
         </div>
     </div>
-    <section class="signup">
+    <section id="update-link" class="signup">
         <div class="container">
             <h2 class="update">Sign-up for <span> Updates</span></h2>
             <p>Stay update with our latest products releases, be the first
                 to find out about upcoming sales, and getfree styletips
                 from our blog. Unsubscribe at any time.</p>
             <form class="email-box">
-                <input type="email" class="email" size="30" placeholder="Your Email" required>
-                <input class="subscribe" type="submit" value="Subscribe">
+                <input id="emailId" type="email" class="email" size="30" placeholder="Your Email" required>
+                <input id="subscribeId" class="subscribe" type="submit" value="Subscribe">
             </form>
         </div>
     </section>

@@ -16,11 +16,16 @@ body {
     font-style: normal;
 }
 
+
 h1,
 h2,
 h3 {
     font-family: 'Playfair Display', Courier, monospace;
     color: #2d2d2d;
+}
+
+a:hover {
+    color: #b64036 !important;
 }
 
 span {
@@ -43,6 +48,7 @@ img {
  but allowing components to change */
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -84,10 +90,11 @@ header {
     padding: 12px 0 0 0;
     margin: 10px 0px;
 }
-.nav-list ul{
+
+.nav-list ul {
     display: flex;
     justify-content: space-around;
-    
+
 }
 
 .nav-border {
@@ -160,7 +167,7 @@ li.nav-list {
 .hand-title {
     font-size: 0.7em;
     padding: 20px;
-    min-width:300px;
+    min-width: 300px;
 
 }
 
@@ -345,7 +352,7 @@ li.nav-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 100%;
+    max-width: 50%;
     margin: 0 auto;
     height: 40px;
 }
@@ -386,7 +393,7 @@ footer {
 
 .footer-content {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column;
     justify-content: space-between;
     height: 200px;
 }
@@ -421,34 +428,22 @@ footer .footer-content ul li a {
     text-decoration: none;
 }
 
-footer .footer-content ul li a i{
+footer .footer-content ul li a i {
     color: white;
     min-width: 25px;
     display: inline-block;
 }
 
-.social-media{
+.social-media {
     display: none;
 }
-
-/*Tablet*/
-@media screen and (min-width: 600 px) {
-
-    .carousel-cell {
-        width: 50%;
-    }
-}
-
-/*end of table section*/
-
 
 /* ############################
 ############################
 ############################
 ############################ */
-/* change it back to 1240px */
-/* Beggining of Desktop*/
-@media screen and (min-width: 1000px) {
+/*Tablet*/
+@media screen and (min-width: 600px) {
 
     .carousel-cell {
         width: 50%;
@@ -482,13 +477,251 @@ footer .footer-content ul li a i{
         text-transform: uppercase;
         color: #e2574c;
         font-size: 16px;
-        align-self: flex-end;
+        align-self: center;
         order: 2;
+        margin: 0 0;
+        padding-top: 0px;
 
     }
 
     .nav-border {
         border: none;
+
+    }
+
+    a {
+        color: #e2574c;
+        font-size: 16px;
+    }
+
+    li.nav-list {
+        display: inline;
+        margin-left: 15px;
+
+    }
+
+    /* Hand craft styles */
+
+    .hand-crafted {
+        height: 300px;
+        font-size: 50px;
+        font-style: italic;
+        padding: 70px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+
+    }
+
+    .hand-title {
+        font-size: 40px;
+    }
+
+    .hand-text {
+        font-size: 20px;
+    }
+
+    /* Products navigation */
+    .products {
+        display: flex;
+        flex-flow: column wrap;
+        color: white;
+    }
+
+    .products-catalogue {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        background-color: white;
+
+    }
+
+    .products-catalogue li a {
+        color: white;
+        text-decoration: none;
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+
+
+
+
+    .products-list {
+        display: flex;
+        flex-basis: 25%;
+        justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .products-men-women {
+        display: flex;
+        flex-basis: 50%;
+        justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .email-box {
+        border-radius: 40px;
+        background-color: white;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        /* min-width: 300px; */
+        max-width: 50%;
+        /* width: 500px; */
+        margin: 0 auto;
+    }
+
+    /* .email {
+        border: 0px;
+        border-radius: 40px;
+        padding: 1em;
+        margin-left: 1.5em;
+        height: 100%;
+        align-items: center;
+        color: black;
+        width: 90%;
+        font-size: 1em; */
+
+    email {
+        border: 0px;
+        border-radius: 40px;
+        padding: 1em;
+        margin-left: 1.5em;
+        height: 100%;
+        align-items: center;
+        /* background-color: blue; */
+        color: black;
+        width: 90%;
+        font-size: 1em;
+    }
+
+    .subscribe {
+        padding: 0.4em;
+        margin: 0.3em;
+        border-radius: 40px;
+        background-color: #e2574c;
+        font-size: 0.9em;
+        color: white;
+        width: 120px;
+    }
+
+    /* Footer */
+    footer {
+        background-color: black;
+        color: white;
+        padding: 50px;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row;
+        height: 150px;
+    }
+
+    .copy-contact {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        height: 80%;
+    }
+
+    p.info a {
+        color: white;
+    }
+
+    p .copyright {
+        line-height: 2em;
+    }
+
+    .footer-content p.contact {
+        color: #969696;
+    }
+
+    .footer-content ul {
+        line-height: 1.5em;
+        display: block;
+    }
+
+    footer .footer-content ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .social-media {
+        display: contents;
+        font-weight: 100;
+        font-family: 'Playfair Display', Courier, monospace;
+    }
+
+}
+
+/*end of table section*/
+
+
+/* ############################
+############################
+############################
+############################ */
+/* change it back to 1240px */
+/* Beggining of Desktop*/
+@media screen and (min-width: 1000px) {
+
+    .carousel-cell {
+        width: 25%;
+    }
+
+    /* Header*/
+    header {
+        padding: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        align-content: space-between;
+    }
+
+    .logo {
+        align-self: flex-start;
+        flex-basis: 100px;
+        order: 1;
+    }
+
+    .cart {
+        align-self: flex-start;
+        flex-basis: 50px;
+        order: 3;
+    }
+
+    /* .nav-list {
+        text-align: center;
+        text-transform: uppercase;
+        color: #e2574c;
+        font-size: 16px;
+        align-self: flex-start;
+        order: 2;
+        margin: 0 0;
+        padding-top: 0px;
+    } */
+    .nav-list {
+        text-align: center;
+        text-transform: uppercase;
+        color: #e2574c;
+        font-size: 16px;
+        align-self: center;
+        order: 2;
+        margin: 0 0;
+        padding-top: 0px;
+    }
+
+    .nav-border {
+        border: none;
+        padding: 0;
+        margin: 0;
 
     }
 
@@ -592,47 +825,7 @@ footer .footer-content ul li a i{
         padding-bottom: 100px;
     }
 
-    .imgmen {
-        background:
-            url(../images/mens-category.jpg) no-repeat center center;
-        background-size: cover;
-        border: 5px solid white;
-    }
 
-    .imgtrends {
-        background:
-            url(../images/trends-category.jpg) no-repeat center center;
-        background-size: cover;
-        border: 5px solid white;
-    }
-
-    .imgglasses {
-        background:
-            url(../images/glasses-category.jpg) no-repeat center center;
-        background-size: cover;
-        border: 5px solid white;
-    }
-
-    .imgsales {
-        background:
-            url(../images/sale-category.jpg) no-repeat center center;
-        background-size: cover;
-        border: 5px solid white;
-    }
-
-    .imgbags {
-        background:
-            url(../images/bags-category.jpg) no-repeat center center;
-        background-size: cover;
-        border: 5px solid white;
-    }
-
-    .imgwomen {
-        background:
-            url(../images/womens-category.jpg) no-repeat center center;
-        background-size: cover;
-        border: 5px solid white;
-    }
 
     /* Most Loved products */
     /* media query example */
@@ -668,6 +861,7 @@ footer .footer-content ul li a i{
         text-align: center;
 
     }
+
     .product-type {
         font-size: 15px;
         text-transform: uppercase;
@@ -712,20 +906,20 @@ footer .footer-content ul li a i{
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        min-width: 300px;
-        max-width: 600px;
+        /* min-width: 300px; */
+        max-width: 50%;
         width: 70%;
         margin: 0 auto;
     }
 
-    .email {
+    /* .email {
         border: 0px;
         border-radius: 40px;
         padding: 1em;
         margin-left: 1.5em;
         height: 100%;
         align-items: center;
-        /* background-color: blue; */
+       
         color: black;
         width: 90%;
         font-size: 1em;
@@ -738,45 +932,72 @@ footer .footer-content ul li a i{
         background-color: #e2574c;
         font-size: 1em;
         color: white;
-        font-weight: bold;
-    }
-
-    /* Footer */
-    footer {
-        background-color: black;
-        color: white;
-        padding: 50px;
-    }
-
-    .footer-content {
-        display: flex;
-        justify-content: space-between;
-        height: 150px;
-    }
-
-    .copy-contact {
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
-        height: 80%;
-    }
-
-    .info a {
-        color: white;
-        text-decoration: none;
-    }
+        font-weight: bold
+     }
+      */
 
 
-    .footer-content p.contact {
-        color: #969696;
-    }
+email {
+    border: 0px;
+    border-radius: 40px;
+    padding: 1em;
+    margin-left: 1.5em;
+    height: 100%;
+    align-items: center;
+    /* background-color: blue; */
+    color: black;
+    width: 90%;
+    font-size: 1em;
+}
 
-    .footer-content ul {
-        line-height: 1.5em;
-    }
+.subscribe {
+    padding: 0.4em;
+    margin: 0.3em;
+    border-radius: 40px;
+    background-color: #e2574c;
+    font-size: 0.9em;
+    color: white;
+    width: 120px;
+}
 
-    footer .footer-content ul li a {
-        color: white;
-        text-decoration: none;
-    }
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.copy-contact {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 80%;
+}
+
+.info a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.footer-content p.contact {
+    color: #969696;
+}
+
+.footer-content ul {
+    line-height: 1.5em;
+
+}
+
+footer .footer-content ul li a {
+    color: white;
+    text-decoration: none;
+}
 }

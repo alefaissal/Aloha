@@ -352,7 +352,8 @@ li.nav-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 50%;
+    min-width: 230px;
+    max-width: 60%;
     margin: 0 auto;
     height: 40px;
 }

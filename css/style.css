@@ -53,7 +53,7 @@ html {
 
 /* Header*/
 header {
-    padding: 10px;
+    padding: 10px 10px 5px 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -65,6 +65,8 @@ header {
 .logo {
     align-self: flex-start;
     flex-basis: 100px;
+    size: 30px;
+    max-width: 130px;
 }
 
 .cart {
@@ -76,24 +78,25 @@ header {
     text-align: center;
     text-transform: uppercase;
     color: #e2574c;
-    font-size: 16px;
+    /* font-size: 05px; */
     align-self: flex-end;
     order: 3;
-    padding: 20px 0px;
+    padding: 12px 0 0 0;
     margin: 10px 0px;
 }
 
 .nav-border {
     border-style: solid;
     border-width: 1px 0px 0px 0px;
-    border-color: #969696;
+    border-color: #cecdcd;
     width: 100%;
 }
 
 
-a {
+.nav-list a {
     color: #e2574c;
-    font-size: 16px;
+    font-size: 0.9em;
+    text-decoration: none;
 }
 
 li.nav-list {
@@ -109,17 +112,21 @@ li.nav-list {
         url(../images/banner-girl.png) no-repeat center 70px,
         url(../images/flower-bkgd.jpg) repeat-x center top;
     background-size: cover, contain, cover;
-    padding: 150px 60px;
+    padding: 150px 60px 180px 60px;
     color: white;
 }
 
 .season {
-    font-size: 3.5em;
-
+    font-family: 'Playfair Display';
+    font-size: 2em;
+    width: 400px;
+    padding: 30px 0 0 0;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .new-collection {
-    font-size: 1.5em;
+    font-size: 1em;
     text-transform: uppercase;
 
 }
@@ -134,22 +141,27 @@ li.nav-list {
 /* Hand craft styles */
 
 .hand-crafted {
-    height: 300px;
+    height: 260px;
     font-size: 50px;
     font-style: italic;
     padding: 70px;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-
+    flex-flow: column nowrap;
+    justify-content: center;
+    line-height: 0.6em;
 }
 
 .hand-title {
-    font-size: 40px;
+    font-size: 0.7em;
+    padding: 20px;
+
 }
 
 .hand-text {
-    font-size: 20px;
+    font-size: 0.3em;
+    font-weight: 100;
+    min-width: 450px;
+    align-self: center;
 }
 
 /* Products navigation */
@@ -161,38 +173,38 @@ li.nav-list {
 
 .products-catalogue {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     background-color: white;
-    
+
 }
 
 .products-catalogue li a {
     color: white;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 1.5em;
     text-transform: uppercase;
 }
 
 
 .products-list {
     display: flex;
-    flex-basis: 25%;
+    flex-basis: 50%;
     justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 114px 0;
+
 }
 
 .products-men-women {
     display: flex;
-    flex-basis: 50%;
+    flex-basis: 100%;
     justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 114px 0;
 }
 
 .imgmen {
     background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
         url(../images/mens-category.jpg) no-repeat center center;
     background-size: cover;
     border: 5px solid white;
@@ -200,6 +212,7 @@ li.nav-list {
 
 .imgtrends {
     background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
         url(../images/trends-category.jpg) no-repeat center center;
     background-size: cover;
     border: 5px solid white;
@@ -207,6 +220,7 @@ li.nav-list {
 
 .imgglasses {
     background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
         url(../images/glasses-category.jpg) no-repeat center center;
     background-size: cover;
     border: 5px solid white;
@@ -214,6 +228,7 @@ li.nav-list {
 
 .imgsales {
     background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
         url(../images/sale-category.jpg) no-repeat center center;
     background-size: cover;
     border: 5px solid white;
@@ -221,6 +236,7 @@ li.nav-list {
 
 .imgbags {
     background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
         url(../images/bags-category.jpg) no-repeat center center;
     background-size: cover;
     border: 5px solid white;
@@ -228,6 +244,7 @@ li.nav-list {
 
 .imgwomen {
     background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
         url(../images/womens-category.jpg) no-repeat center center;
     background-size: cover;
     border: 5px solid white;
@@ -238,10 +255,14 @@ li.nav-list {
 .carousel-cell {
     width: 100%;
     text-align: center;
+    margin-bottom: 70px;
 }
 
+
 .loved-products {
-    font-size: 40px;
+    font-size: 2.2em;
+    font-style: italic;
+    padding: 50px 0;
 }
 
 
@@ -261,35 +282,21 @@ li.nav-list {
     font-size: 1em;
 }
 
-.stretch-dress {
-    /* min-width: 300px; */
+.product-cell {
     text-align: center;
 
-}
-
-.hipster-backpack {
-    /* min-width: 300px; */
-    text-align: center;
-}
-
-.demin-shorts {
-    /* min-width: 300px; */
-    text-align: center;
-}
-
-.dotted-dress {
-    /* min-width: 300px; */
-    text-align: center;
 }
 
 .product-type {
-    font-size: 15px;
+    font-size: 0.3em;
     text-transform: uppercase;
 }
 
 .product-name {
-    font-size: 25px;
-
+    font-family: 'Playfair Display';
+    font-size: 0.5em;
+    padding: 20px 0;
+    font-style: normal;
 }
 
 .price {
@@ -298,12 +305,13 @@ li.nav-list {
 
 /* Signup for updates */
 .signup {
-    padding: 75px;
+    padding: 55px;
     background:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
         url(../images/wave-bkgd.jpg) no-repeat bottom;
     background-size: cover 1024px 1500px cover;
     color: white;
+    margin-bottom: 10px;
 }
 
 .signup h2 {
@@ -316,20 +324,21 @@ li.nav-list {
 .signup p {
     font-size: 1em;
     line-height: 2em;
-    max-width: 60%;
+    max-width: 100%;
     margin: 0 auto;
+    margin-bottom: 20px;
+    font-weight: 100;
 }
 
 .email-box {
     border-radius: 40px;
     background-color: white;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
-    min-width: 300px;
-    max-width: 600px;
-    width: 70%;
+    min-width: 100%;
     margin: 0 auto;
+    height: 40px;
 }
 
 .email {
@@ -346,13 +355,13 @@ li.nav-list {
 }
 
 .subscribe {
-    padding: 1em;
+    padding: 0.4em;
     margin: 0.3em;
     border-radius: 40px;
     background-color: #e2574c;
-    font-size: 1em;
+    font-size: 0.9em;
     color: white;
-    font-weight: bold;
+    width: 120px;
 }
 
 /* Footer */
@@ -360,19 +369,26 @@ footer {
     background-color: black;
     color: white;
     padding: 50px;
+    font-family: 'Playfair Display';
+    font-size: 0.9em;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .footer-content {
     display: flex;
+    flex-flow: column nowrap;
     justify-content: space-between;
-    height: 150px;
+    height: 200px;
 }
 
 .copy-contact {
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     height: 80%;
+    line-height: 20px;
 }
 
 .info a {
@@ -387,6 +403,8 @@ footer {
 
 .footer-content ul {
     line-height: 1.5em;
+    display: inline-flex;
+    align-self: center;
 }
 
 footer .footer-content ul li a {
@@ -394,11 +412,24 @@ footer .footer-content ul li a {
     text-decoration: none;
 }
 
-/*Tablet*/
-@media screen and (min-width: 600 px) {}
-.carousel-cell {
-    width: 50%;
+footer .footer-content ul li a i{
+    color: white;
+    min-width: 25px;
+    display: inline-block;
 }
+
+.social-media{
+    display: none;
+}
+
+/*Tablet*/
+@media screen and (min-width: 600 px) {
+
+    .carousel-cell {
+        width: 50%;
+    }
+}
+
 /*end of table section*/
 
 
@@ -409,6 +440,10 @@ footer .footer-content ul li a {
 /* change it back to 1240px */
 /* Beggining of Desktop*/
 @media screen and (min-width: 1000px) {
+
+    .carousel-cell {
+        width: 50%;
+    }
 
     /* Header*/
     header {
@@ -521,7 +556,7 @@ footer .footer-content ul li a {
         flex-flow: row nowrap;
         justify-content: center;
         background-color: white;
-       
+
     }
 
     .products-catalogue li a {
@@ -619,27 +654,11 @@ footer .footer-content ul li a {
         font-size: 1em;
     }
 
-    .stretch-dress {
+    .product-cell {
         /* min-width: 300px; */
         text-align: center;
 
     }
-
-    .hipster-backpack {
-        /* min-width: 300px; */
-        text-align: center;
-    }
-
-    .demin-shorts {
-        /* min-width: 300px; */
-        text-align: center;
-    }
-
-    .dotted-dress {
-        /* min-width: 300px; */
-        text-align: center;
-    }
-
     .product-type {
         font-size: 15px;
         text-transform: uppercase;

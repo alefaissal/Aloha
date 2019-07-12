@@ -8,18 +8,24 @@
     <meta name="author" content="Alex Faissal">
     <meta name="description" content="First project RED web dev">
     <title>Aloha Apparel Co</title>
+
     <link rel="stylesheet" href="css/reset.css">
+
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Flickity JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    
     <link rel="stylesheet" href="fonts/stylesheet.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" 
-    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="container">
         <img class="logo" src="images/aloha-logo.svg" alt="Aloha Logo" width="200">
-        <nav class="nav-list">
+        <nav class="nav-list nav-border">
             <ul>
                 <li class="nav-list"><a href="#">About</a></li>
                 <li class="nav-list"><a href="#shop-link">Shop</a></li>
@@ -65,31 +71,38 @@
             <h2>Most-Loved <span>Products</span> </h2>
         </div>
     </section>
-    <div class="catalogue-products">
-        <!--several div's with description, code, image and prices -->
-        <div class="stretch-dress">
-            <img src="images/checked-stretch-dress.jpg" alt=" stretch dress">
-            <p class="product-type">Dresses</p>
-            <p class="product-name"><a href="#">Checked Stretch Dress</a></p>
-            <p class="price">$129.00</p>
+    <div class="main-carousel catalogue-products">
+        <div class="carousel-cell">
+            <div class="stretch-dress">
+                <img src="images/checked-stretch-dress.jpg" alt=" stretch dress">
+                <p class="product-type">Dresses</p>
+                <p class="product-name"><a href="#">Checked Stretch Dress</a></p>
+                <p class="price">$129.00</p>
+            </div>
         </div>
-        <div class="hipster-backpack">
-            <img src="images/blue-hipster-backpack.jpg" alt=" stretch dress">
-            <p class="product-type">Bags</p>
-            <p class="product-name"><a href="#">Blue Hipster Backpack</a></p>
-            <p class="price">$69.00</p>
+        <div class="carousel-cell">
+            <div class="hipster-backpack">
+                <img src="images/blue-hipster-backpack.jpg" alt=" stretch dress">
+                <p class="product-type">Bags</p>
+                <p class="product-name"><a href="#">Blue Hipster Backpack</a></p>
+                <p class="price">$69.00</p>
+            </div>
         </div>
-        <div class="demin-shorts">
-            <img src="images/demin-overall-shorts.jpg" alt=" stretch dress">
-            <p class="product-type">Demin</p>
-            <p class="product-name"><a href="#">Demin Overall Shorts</a></p>
-            <p class="price">$89.00</p>
+        <div class="carousel-cell">
+            <div class="demin-shorts">
+                <img src="images/demin-overall-shorts.jpg" alt=" stretch dress">
+                <p class="product-type">Demin</p>
+                <p class="product-name"><a href="#">Demin Overall Shorts</a></p>
+                <p class="price">$89.00</p>
+            </div>
         </div>
-        <div class="dotted-dress">
-            <img src="images/pink-dotted-dress.jpg" alt=" stretch dress">
-            <p class="product-type">Dresses</p>
-            <p class="product-name"><a href="#">Pink Dotted Dress</a></p>
-            <p class="price">$99.00</p>
+        <div class="carousel-cell">
+            <div class="dotted-dress">
+                <img src="images/pink-dotted-dress.jpg" alt=" stretch dress">
+                <p class="product-type">Dresses</p>
+                <p class="product-name"><a href="#">Pink Dotted Dress</a></p>
+                <p class="price">$99.00</p>
+            </div>
         </div>
     </div>
     <section class="signup">
@@ -98,10 +111,10 @@
             <p>Stay update with our latest products releases, be the first
                 to find out about upcoming sales, and getfree styletips
                 from our blog. Unsubscribe at any time.</p>
-        <form class="email-box">
-            <input type="email" class="email" size="30" placeholder="Your Email" required>
-            <input class="subscribe" type="button" value="Subscribe">
-        </form>
+            <form class="email-box">
+                <input type="email" class="email" size="30" placeholder="Your Email" required>
+                <input class="subscribe" type="submit" value="Subscribe">
+            </form>
         </div>
     </section>
     <footer>
@@ -116,20 +129,22 @@
                     Vancouver, BC, Canada</p>
             </div>
             <ul>
-                <li><i class="fab fa-facebook-square"></i> 
-                    <a href="#">Facebook</a></li>
-                <li><i class="fab fa-twitter-square"></i>
-                    <a href="#">Twitter</a></li>
-                <li><i class="fab fa-instagram"></i>
-                    <a href="#">Instagram</a></li>
-                <li><i class="fab fa-pinterest-square"></i>
-                    <a href="#">Pinterest</a></li>
-                <li><i class="fab fa-google-plus-square"></i>
-                    <a href="#">Google+</a></li>
+                <li><a href="#"><i class="fab fa-facebook-square"></i>
+                        Facebook</a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i>
+                        Twitter</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i>
+                        Instagram</a></li>
+                <li><a href="#"><i class="fab fa-pinterest-square"></i>
+                        Pinterest</a></li>
+                <li><a href="#"><i class="fab fa-google-plus-square"></i>
+                        Google+</a></li>
 
             </ul>
         </div>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // all of your JS code goes here
 
 });
+
+//Code for the caroussel
 const elem = document.querySelector('.main-carousel');
 const flkty = new Flickity(elem, {
   // options
@@ -10,9 +12,9 @@ const flkty = new Flickity(elem, {
   freeScroll: true
 });
 
+//Code for the message from the subscribe button
 const email = document.getElementById("emailId");
 const subscribe = document.getElementById("subscribeId");
-
 subscribe.addEventListener("click", function (event) {
   event.preventDefault();
   console.log("Form submitted");
@@ -24,7 +26,7 @@ subscribe.addEventListener("click", function (event) {
   }
 });
 
-// Shopping cart  
+// Shopping cart code to add number and color 
 const cartCount = document.getElementById("shopping-number");
 
 const productCart1 = document.getElementById("product1-cart");

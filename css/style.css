@@ -8,15 +8,27 @@
     outline: none;
 }
 
+/* apply a natural box layout model to all elements,
+ but allowing components to change */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
 /* General styles */
 html,
 body {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-style: normal;
-
 }
-
 
 h1,
 h2,
@@ -45,18 +57,6 @@ img {
     height: auto;
 }
 
-/* apply a natural box layout model to all elements,
- but allowing components to change */
-html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
 
 /* Header*/
 header {
@@ -84,8 +84,6 @@ header {
 .nav-list {
     text-align: center;
     text-transform: uppercase;
-    /* color: #e2574c; */
-    /* font-size: 05px; */
     align-self: flex-end;
     order: 3;
     padding: 12px 0 0 0;
@@ -114,13 +112,9 @@ header {
 
 li.nav-list {
     display: inline;
-    /* margin-left: 3em; */
-
 }
 
-#shopping-number{
-    
-    /* background-color: #e2574c; */
+#shopping-number {
     width: 20px;
     height: 20px;
     position: relative;
@@ -130,6 +124,7 @@ li.nav-list {
     text-align: center;
     margin: 0 auto;
 }
+
 /* Season banner */
 .season-banner {
     background:
@@ -153,15 +148,12 @@ li.nav-list {
 .new-collection {
     font-size: 1em;
     text-transform: uppercase;
-
 }
 
 .container {
     margin: 0 auto;
     width: 100%;
 }
-
-
 
 /* Hand craft styles */
 
@@ -212,7 +204,6 @@ li.nav-list {
     font-size: 1.5em;
     text-transform: uppercase;
 }
-
 
 .products-list {
     display: flex;
@@ -278,13 +269,11 @@ li.nav-list {
 }
 
 /* Most Loved products */
-/* mobile style */
 .carousel-cell {
     width: 100%;
     text-align: center;
     margin-bottom: 70px;
 }
-
 
 .loved-products {
     font-size: 2.2em;
@@ -294,13 +283,8 @@ li.nav-list {
     align-items: center;
 }
 
-
 .catalogue-products {
     font-size: 40px;
-    /* display: flex; */
-    /* justify-content: space-evenly; */
-    /* width: 100%;
-    flex-wrap: wrap; */
     color: #969696;
     margin-bottom: 50px;
 }
@@ -378,7 +362,6 @@ li.nav-list {
     margin-left: 1.5em;
     height: 100%;
     align-items: center;
-    /* background-color: blue; */
     color: black;
     width: 90%;
     font-size: 1em;
@@ -452,10 +435,8 @@ footer .footer-content ul li a i {
     display: none;
 }
 
-/* ############################
-############################
-############################
-############################ */
+/* ####################################################################################
+From here down only cody for Tablet   ############################ */
 /*Tablet*/
 @media screen and (min-width: 600px) {
 
@@ -466,41 +447,38 @@ footer .footer-content ul li a i {
     /* Header*/
     header {
         padding: 25px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         flex-wrap: nowrap;
-        align-items: center;
-        align-content: space-between;
     }
 
+    .season {
+        font-size: 70px;
+
+    }
+
+    .new-collection {
+        font-size: 30px;
+        text-transform: uppercase;
+
+    }
+    
     .logo {
-        align-self: flex-start;
-        flex-basis: 100px;
         order: 1;
     }
 
     .cart {
-        align-self: flex-start;
-        flex-basis: 50px;
         order: 3;
     }
 
     .nav-list {
-        text-align: center;
-        text-transform: uppercase;
-        color: #e2574c;
         font-size: 16px;
         align-self: center;
         order: 2;
         margin: 0 0;
         padding-top: 0px;
-
     }
 
     .nav-border {
         border: none;
-
     }
 
     a {
@@ -509,22 +487,14 @@ footer .footer-content ul li a i {
     }
 
     li.nav-list {
-        display: inline;
         margin-left: 15px;
-
     }
 
     /* Hand craft styles */
-
     .hand-crafted {
         height: 300px;
-        font-size: 50px;
-        font-style: italic;
-        padding: 70px;
-        display: flex;
         flex-flow: column wrap;
         justify-content: space-between;
-
     }
 
     .hand-title {
@@ -535,78 +505,38 @@ footer .footer-content ul li a i {
         font-size: 20px;
     }
 
-    /* Products navigation */
-    .products {
-        display: flex;
-        flex-flow: column wrap;
-        color: white;
-    }
-
     .products-catalogue {
-        display: flex;
         flex-flow: row nowrap;
-        justify-content: center;
-        background-color: white;
-
     }
 
     .products-catalogue li a {
-        color: white;
-        text-decoration: none;
         font-size: 40px;
-        text-transform: uppercase;
     }
 
-
-
-
     .products-list {
-        display: flex;
         flex-basis: 25%;
-        justify-content: center;
         padding-top: 100px;
         padding-bottom: 100px;
     }
 
     .products-men-women {
-        display: flex;
         flex-basis: 50%;
-        justify-content: center;
         padding-top: 100px;
         padding-bottom: 100px;
     }
-
+    /* Signup for updates */
     .email-box {
-        border-radius: 40px;
-        background-color: white;
-        display: flex;
         align-items: baseline;
-        justify-content: space-between;
-        /* min-width: 300px; */
         max-width: 50%;
-        /* width: 500px; */
-        margin: 0 auto;
     }
 
-    /* .email {
+    .email {
         border: 0px;
         border-radius: 40px;
         padding: 1em;
         margin-left: 1.5em;
         height: 100%;
         align-items: center;
-        color: black;
-        width: 90%;
-        font-size: 1em; */
-
-    email {
-        border: 0px;
-        border-radius: 40px;
-        padding: 1em;
-        margin-left: 1.5em;
-        height: 100%;
-        align-items: center;
-        /* background-color: blue; */
         color: black;
         width: 90%;
         font-size: 1em;
@@ -615,8 +545,6 @@ footer .footer-content ul li a i {
     .subscribe {
         padding: 0.4em;
         margin: 0.3em;
-        border-radius: 40px;
-        background-color: #e2574c;
         font-size: 0.9em;
         color: white;
         width: 120px;
@@ -624,23 +552,17 @@ footer .footer-content ul li a i {
 
     /* Footer */
     footer {
-        background-color: black;
         color: white;
         padding: 50px;
     }
 
     .footer-content {
-        display: flex;
-        justify-content: space-between;
         flex-flow: row;
         height: 150px;
     }
 
     .copy-contact {
-        display: flex;
-        flex-flow: column;
         justify-content: space-between;
-        height: 80%;
     }
 
     p.info a {
@@ -676,77 +598,22 @@ footer .footer-content ul li a i {
 /*end of table section*/
 
 
-/* ############################
-############################
-############################
-############################ */
-/* Beggining of Desktop*/
+/* ####################################################################################
+From here down, code for desktop  ############################ */
 @media screen and (min-width: 1240px) {
 
     .carousel-cell {
         width: 25%;
     }
 
-    /* Header*/
+    /* Headr*/
     header {
-        padding: 25px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: nowrap;
         align-items: baseline;
-        align-content: space-between;
-    }
-
-    .logo {
-        align-self: flex-start;
-        flex-basis: 100px;
-        order: 1;
-    }
-
-    .cart {
-        align-self: flex-start;
-        flex-basis: 50px;
-        order: 3;
-    }
-
-    /* .nav-list {
-        text-align: center;
-        text-transform: uppercase;
-        color: #e2574c;
-        font-size: 16px;
-        align-self: flex-start;
-        order: 2;
-        margin: 0 0;
-        padding-top: 0px;
-    } */
-    .nav-list {
-        text-align: center;
-        text-transform: uppercase;
-        color: #e2574c;
-        font-size: 16px;
-        align-self: center;
-        order: 2;
-        margin: 0 0;
-        padding-top: 0px;
     }
 
     .nav-border {
-        border: none;
         padding: 0;
         margin: 0;
-
-    }
-
-    a {
-        color: #e2574c;
-        font-size: 16px;
-    }
-
-    li.nav-list {
-        display: inline;
-        margin-left: 15px;
-
     }
 
     /* Season banner */
@@ -776,77 +643,7 @@ footer .footer-content ul li a i {
         width: 100%;
     }
 
-
-
-    /* Hand craft styles */
-
-    .hand-crafted {
-        height: 300px;
-        font-size: 50px;
-        font-style: italic;
-        padding: 70px;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-between;
-
-    }
-
-    .hand-title {
-        font-size: 40px;
-    }
-
-    .hand-text {
-        font-size: 20px;
-    }
-
-    /* Products navigation */
-    .products {
-        display: flex;
-        flex-flow: column wrap;
-        color: white;
-    }
-
-    .products-catalogue {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        background-color: white;
-
-    }
-
-    .products-catalogue li a {
-        color: white;
-        text-decoration: none;
-        font-size: 40px;
-        text-transform: uppercase;
-    }
-
-
-    .products-list {
-        display: flex;
-        flex-basis: 25%;
-        justify-content: center;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-    .products-men-women {
-        display: flex;
-        flex-basis: 50%;
-        justify-content: center;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-
-
     /* Most Loved products */
-    /* media query example */
-    @media screen and (min-width: 600px) {
-        .carousel-cell {
-            width: 25%;
-        }
-    }
 
     .loved-products {
         font-size: 40px;
@@ -855,10 +652,6 @@ footer .footer-content ul li a i {
 
     .catalogue-products {
         font-size: 40px;
-        /* display: flex; */
-        /* justify-content: space-evenly;
-        width: 100%;
-        flex-wrap: wrap; */
         color: #969696;
         margin-bottom: 50px;
     }
@@ -870,9 +663,7 @@ footer .footer-content ul li a i {
     }
 
     .product-cell {
-        /* min-width: 300px; */
         text-align: center;
-
     }
 
     .product-type {
@@ -905,40 +696,20 @@ footer .footer-content ul li a i {
         font-style: italic;
         color: white;
     }
-
+/* 
     .signup p {
         font-size: 1em;
         line-height: 2em;
         max-width: 60%;
         margin: 0 auto;
-    }
-
+    } */
+/* 
     .email-box {
-        border-radius: 40px;
-        background-color: white;
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        /* min-width: 300px; */
         max-width: 50%;
         width: 70%;
-        margin: 0 auto;
-    }
+    } */
 
-    /* .email {
-        border: 0px;
-        border-radius: 40px;
-        padding: 1em;
-        margin-left: 1.5em;
-        height: 100%;
-        align-items: center;
-       
-        color: black;
-        width: 90%;
-        font-size: 1em;
-    }
-
-    .subscribe {
+    /* .subscribe {
         padding: 1em;
         margin: 0.3em;
         border-radius: 40px;
@@ -946,71 +717,29 @@ footer .footer-content ul li a i {
         font-size: 1em;
         color: white;
         font-weight: bold
-     }
-      */
+    } */
 
+    email {
+        border: 0px;
+        border-radius: 40px;
+        padding: 1em;
+        margin-left: 1.5em;
+        height: 100%;
+        align-items: center;
+        /* background-color: blue; */
+        color: black;
+        width: 90%;
+        font-size: 1em;
+    }
 
-email {
-    border: 0px;
-    border-radius: 40px;
-    padding: 1em;
-    margin-left: 1.5em;
-    height: 100%;
-    align-items: center;
-    /* background-color: blue; */
-    color: black;
-    width: 90%;
-    font-size: 1em;
-}
+    /* Footer */
 
-.subscribe {
-    padding: 0.4em;
-    margin: 0.3em;
-    border-radius: 40px;
-    background-color: #e2574c;
-    font-size: 0.9em;
-    color: white;
-    width: 120px;
-}
+    .info a {
+        color: white;
+        text-decoration: none;
+    }
 
-/* Footer */
-footer {
-    background-color: black;
-    color: white;
-    padding: 50px;
-}
-
-.footer-content {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    height: 150px;
-}
-
-.copy-contact {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    height: 80%;
-}
-
-.info a {
-    color: white;
-    text-decoration: none;
-}
-
-
-.footer-content p.contact {
-    color: #969696;
-}
-
-.footer-content ul {
-    line-height: 1.5em;
-
-}
-
-footer .footer-content ul li a {
-    color: white;
-    text-decoration: none;
-}
+    .footer-content p.contact {
+        color: #969696;
+    }
 }

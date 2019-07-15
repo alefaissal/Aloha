@@ -67,6 +67,10 @@ header {
     flex-wrap: wrap;
     align-items: center;
     align-content: space-between;
+    position:fixed;
+    overflow: hidden;
+    top:0;
+    background-color: white;
 }
 
 .logo {
@@ -134,6 +138,7 @@ li.nav-list {
     background-size: cover, contain, cover;
     padding: 150px 60px 180px 60px;
     color: white;
+    /* margin-top:50px; */
 }
 
 .season {

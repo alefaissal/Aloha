@@ -759,25 +759,15 @@ From here down, code for desktop  ############################ */
     height: 1px;
     width: 1px;
     overflow: hidden;
+
 }
 
 .screen-reader-text:focus {
     clip: auto !important;
     display: block;
     height: auto;
-    left: 5px;
-    top: 5px;
     width: auto;
     z-index: 100000;
-    /* above all content */
-}
-
-#main[tabindex="-1"]:focus {
-    outline: 0;
-
-}
-
-.screen-reader-text {
     background: lightgray;
     color: black;
     text-decoration: none;
@@ -787,4 +777,9 @@ From here down, code for desktop  ############################ */
     border-width: 2px;
     border-radius: 45%;
     outline: 0;
+}
+
+#main[tabindex="-1"]:focus {
+    outline: 0;
+
 }

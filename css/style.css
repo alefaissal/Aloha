@@ -5,7 +5,7 @@
 }
 
 *:focus {
-    outline: none;
+    outline: 0.5;
 }
 
 /* apply a natural box layout model to all elements,
@@ -67,10 +67,11 @@ header {
     flex-wrap: wrap;
     align-items: center;
     align-content: space-between;
-    position:fixed;
+    position: fixed;
     overflow: hidden;
-    top:0;
+    top: 0;
     background-color: white;
+    z-index: 200;
 }
 
 .logo {
@@ -465,7 +466,7 @@ From here down only cody for Tablet   ############################ */
         text-transform: uppercase;
 
     }
-    
+
     .logo {
         order: 1;
     }
@@ -529,6 +530,7 @@ From here down only cody for Tablet   ############################ */
         padding-top: 100px;
         padding-bottom: 100px;
     }
+
     /* Signup for updates */
     .email-box {
         align-items: baseline;
@@ -701,14 +703,15 @@ From here down, code for desktop  ############################ */
         font-style: italic;
         color: white;
     }
-/* 
+
+    /* 
     .signup p {
         font-size: 1em;
         line-height: 2em;
         max-width: 60%;
         margin: 0 auto;
     } */
-/* 
+    /* 
     .email-box {
         max-width: 50%;
         width: 70%;
@@ -747,4 +750,41 @@ From here down, code for desktop  ############################ */
     .footer-content p.contact {
         color: #969696;
     }
+}
+
+/* added for accessibility */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* above all content */
+}
+
+#main[tabindex="-1"]:focus {
+    outline: 0;
+
+}
+
+.screen-reader-text {
+    background: lightgray;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border: black solid;
+    border-width: 2px;
+    border-radius: 45%;
+    outline: 0;
 }

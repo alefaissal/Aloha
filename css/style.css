@@ -91,8 +91,8 @@ header {
     text-transform: uppercase;
     align-self: flex-end;
     order: 3;
-    padding: 12px 0 0 0;
-    margin: 10px 0px;
+    padding: 5px 0;
+    margin: 0px;
 }
 
 .nav-list ul {
@@ -139,7 +139,7 @@ li.nav-list {
     background-size: cover, contain, cover;
     padding: 150px 60px 180px 60px;
     color: white;
-    /* margin-top:50px; */
+    margin-top: 50px;
 }
 
 .season {

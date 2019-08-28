@@ -162,7 +162,6 @@ li.nav-list {
 }
 
 /* Hand craft styles */
-
 .hand-crafted {
     height: 260px;
     font-size: 50px;
@@ -441,15 +440,11 @@ footer .footer-content ul li a i {
     display: none;
 }
 
-/* ####################################################################################
-From here down only cody for Tablet   ############################ */
-/*Tablet*/
+/* ##########From here down Tablet   ############### */
 @media screen and (min-width: 600px) {
-
     .carousel-cell {
         width: 50%;
     }
-
     /* Header*/
     header {
         padding: 15px;
@@ -605,15 +600,13 @@ From here down only cody for Tablet   ############################ */
 /*end of table section*/
 
 
-/* ####################################################################################
-From here down, code for desktop  ############################ */
+/* ################From here down desktop  ############################ */
 @media screen and (min-width: 1240px) {
-
     .carousel-cell {
         width: 25%;
     }
 
-    /* Headr*/
+    /* Header*/
     header {
         align-items: baseline;
     }
@@ -651,11 +644,9 @@ From here down, code for desktop  ############################ */
     }
 
     /* Most Loved products */
-
     .loved-products {
         font-size: 40px;
     }
-
 
     .catalogue-products {
         font-size: 40px;
@@ -704,29 +695,6 @@ From here down, code for desktop  ############################ */
         color: white;
     }
 
-    /* 
-    .signup p {
-        font-size: 1em;
-        line-height: 2em;
-        max-width: 60%;
-        margin: 0 auto;
-    } */
-    /* 
-    .email-box {
-        max-width: 50%;
-        width: 70%;
-    } */
-
-    /* .subscribe {
-        padding: 1em;
-        margin: 0.3em;
-        border-radius: 40px;
-        background-color: #e2574c;
-        font-size: 1em;
-        color: white;
-        font-weight: bold
-    } */
-
     email {
         border: 0px;
         border-radius: 40px;
@@ -741,7 +709,6 @@ From here down, code for desktop  ############################ */
     }
 
     /* Footer */
-
     .info a {
         color: white;
         text-decoration: none;
@@ -759,7 +726,6 @@ From here down, code for desktop  ############################ */
     height: 1px;
     width: 1px;
     overflow: hidden;
-
 }
 
 .screen-reader-text:focus {
@@ -781,5 +747,4 @@ From here down, code for desktop  ############################ */
 
 #main[tabindex="-1"]:focus {
     outline: 0;
-
 }

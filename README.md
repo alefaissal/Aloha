@@ -28,5 +28,7 @@ This project was done by Alex Faissal, as a first assigment of the Web Developer
 ## Acknowledgements
 This projects was an achievement made with a lot of efort and a lot of support from the instructors and classroom mates, who were, all, always available for me anytime.
 
+![Alt text](screenshot.png?raw=true “Title”)
 
+<img src="screenshot.png" alt="screenshoot" width="200"/>
 

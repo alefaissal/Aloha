@@ -13,6 +13,8 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 *,
@@ -73,6 +75,9 @@ header {
     background-color: white;
     z-index: 200;
 }
+    header.container{
+    max-width: 1500px; 
+    }
 
 .logo {
     align-self: flex-start;
@@ -684,7 +689,7 @@ footer .footer-content ul li a i {
         background:
             linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
             url(../images/wave-bkgd.jpg) no-repeat bottom;
-        background-size: cover 1024px 1500px cover;
+        background-size: cover;
         color: white;
     }
 
